@@ -15,11 +15,12 @@ imag: number
         if(this.imag >= 0){
             const z = this.real.toString() + '+' + this.imag.toString() + 'i';
             return z;
-        }else{
+        }
+        else{
             const z = this.real.toString() + this.imag.toString() + 'i';
             return z;
         }
-        }
+    }
 }
 let x: any;
 let y: any;
