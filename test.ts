@@ -23,10 +23,6 @@ imag: number
 }
 let x: any;
 let y: any;
-function tocomplex(x: number){
-    const z = new complex(x,0)
-    return z
-}
 function add(x: complex,y: complex){
     const real = x.real + y.real;
     const imag = x.imag + y.imag;
@@ -51,4 +47,8 @@ function div(x: complex,y: complex){
     const kanade = mul(k,amia)
     const z = mul(x,kanade);
     return z;
+}
+function tocomplex(x: number){
+    const z = new complex(x,0)
+    return z
 }
