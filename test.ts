@@ -6,7 +6,7 @@ imag: number
     this.imag = imag;
     }
     abs(){
-      return  (this.real *this.real + this.imag * this.imag)
+      return  (this.real * this.real + this.imag * this.imag)
     }
 }
 let x: any;
