@@ -1,5 +1,5 @@
 function name(x: string,y: string){
-return a + b
+return x + y
 }
 var kanade: string = name('宵崎','奏')
 var amia: string = name('暁山','瑞希')
