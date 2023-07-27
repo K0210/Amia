@@ -6,6 +6,9 @@ imag: number
     this.imag = imag;
     }
     abs(){
+      return  (Math.sqrt(this.real * this.real + this.imag * this.imag))
+    }
+    abs2(){
       return  (this.real * this.real + this.imag * this.imag)
     }
 }
@@ -40,7 +43,7 @@ function mul(x: complex,y: complex){
 }
 function div(x: complex,y: complex){
     const k = new complex(y.real,-y.imag);
-    const amia = new complex(1/y.abs(),0);
+    const amia = new complex(1/y.abs2(),0);
     const kanade = mul(k,amia)
     const z = mul(x,kanade);
     return z;
