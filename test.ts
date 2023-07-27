@@ -18,6 +18,18 @@ var imag = x.imag + y.imag;
 const z = real.toString() + '+' + imag.toString() + 'i';
 return z;
 }
+function sub(x: complex,y: complex){
+var real = x.real - y.real;
+var imag = x.imag - y.imag;
+const z = real.toString() + '+' + imag.toString() + 'i';
+return z;
+}
+function mul(x: complex,y: complex){
+var real = x.real * y.real - x.imag * y.imag;
+var imag = x.real * y.imag + x.imag * y.real;
+const z = real.toString() + '+' + imag.toString() + 'i';
+return z;
+}
 const a = new complex(1,2);
 const b = new complex(3,4);
 console.log(add(a,b));
