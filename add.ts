@@ -6,8 +6,6 @@ imag: number
     this.imag = imag
     }
 }
-const a = new complex(1,2)
-const b = new complex(3,4)
 let x: any
 let y: any
 function toString(x: complex){
@@ -20,4 +18,6 @@ var imag = x.imag + y.imag
 const z = real.toString() + '+' + imag.toString() + 'i'
 return z
 }
+const a = new complex(1,2)
+const b = new complex(3,4)
 console.log(add(a,b))
