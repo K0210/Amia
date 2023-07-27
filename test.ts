@@ -45,7 +45,3 @@ function div(x: complex,y: complex){
     const z = mul(x,kanade);
     return z;
 }
-const a = new complex(1,2);
-const b = new complex(3,4);
-const c = toString(add(a,b));
-console.log(c)
