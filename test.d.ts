@@ -11,5 +11,3 @@ declare function add(x: complex, y: complex): complex;
 declare function sub(x: complex, y: complex): complex;
 declare function mul(x: complex, y: complex): complex;
 declare function div(x: complex, y: complex): complex;
-declare const a: complex;
-declare let c: number;
