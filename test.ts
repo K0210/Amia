@@ -5,6 +5,9 @@ imag: number
     this.real = real;
     this.imag = imag;
     }
+    abs(){
+      return  (this.real *this.real + this.imag * this.imag)
+    }
 }
 let x: any;
 let y: any;
@@ -29,6 +32,13 @@ var real = x.real * y.real - x.imag * y.imag;
 var imag = x.real * y.imag + x.imag * y.real;
 const z = new complex(real,imag);
 return z;
+}
+function div(x: complex,y: complex){
+    const k = new complex(y.real,-y.imag);
+    const amia = new complex(1/y.abs(),0);
+    const kanade = mul(k,amia)
+    const z = mul(x,kanade);
+    return z;
 }
 const a = new complex(1,2);
 const b = new complex(3,4);
