@@ -24,19 +24,19 @@ function add(x: complex,y: complex){
     var real = x.real + y.real;
     var imag = x.imag + y.imag;
     const z = new complex(real,imag);
-return z;
+    return z;
 }
 function sub(x: complex,y: complex){
     var real = x.real - y.real;
     var imag = x.imag - y.imag;
     const z = new complex(real,imag);
-return z;
+    return z;
 }
 function mul(x: complex,y: complex){
     var real = x.real * y.real - x.imag * y.imag;
     var imag = x.real * y.imag + x.imag * y.real;
-const z = new complex(real,imag);
-return z;
+    const z = new complex(real,imag);
+    return z;
 }
 function div(x: complex,y: complex){
     const k = new complex(y.real,-y.imag);
