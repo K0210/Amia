@@ -11,6 +11,15 @@ imag: number
     abs2(){
       return  (this.real * this.real + this.imag * this.imag)
     }
+    toString(x: complex){
+        if(x.imag >= 0){
+            const z = x.real.toString() + '+' + x.imag.toString() + 'i';
+            return z;
+        }else{
+            const z = x.real.toString() + x.imag.toString() + 'i';
+            return z;
+        }
+        }
 }
 let x: any;
 let y: any;
