@@ -12,7 +12,11 @@ imag: number
       return  (this.real * this.real + this.imag * this.imag)
     }
     toString(){
-        if(this.imag >= 0){
+        if(this.real == 0 && this.imag != 0){
+            const z = this.imag.toString() + 'i'
+            return z;
+        }
+        else if(this.imag >= 0){
             const z = this.real.toString() + '+' + this.imag.toString() + 'i';
             return z;
         }
