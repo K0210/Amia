@@ -23,15 +23,6 @@ imag: number
 }
 let x: any;
 let y: any;
-function toString(x: complex){
-    if(x.imag >= 0){
-        const z = x.real.toString() + '+' + x.imag.toString() + 'i';
-        return z;
-    }else{
-        const z = x.real.toString() + x.imag.toString() + 'i';
-        return z;
-    }
-}
 function add(x: complex,y: complex){
     const real = x.real + y.real;
     const imag = x.imag + y.imag;
