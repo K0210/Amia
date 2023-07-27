@@ -1,8 +1,6 @@
-type complex = {
+class complex{
     real: number
     imag: number
-}
-class complex{
     constructor(real: number,imag: number) {
     this.real = real;
     this.imag = imag;
