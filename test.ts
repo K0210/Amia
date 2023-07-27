@@ -48,7 +48,3 @@ function div(x: complex,y: complex){
     const z = mul(x,kanade);
     return z;
 }
-function tocomplex(x: number){
-    const z = new complex(x,0)
-    return z
-}
