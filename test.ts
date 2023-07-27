@@ -1,5 +1,5 @@
 function name(x: string,y: string){
 return a + b
 }
-var kanade = name('宵崎','奏')
-console.log(kanade)
+var kanade: string = name('宵崎','奏')
+var amia: string = name('暁山','瑞希')
