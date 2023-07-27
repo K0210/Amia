@@ -1,4 +1,5 @@
-function amia(x: string,y: string){
+function name(x: string,y: string){
 return a + b
 }
-console.log(amia('宵崎','奏'))
+var kanade = name('宵崎','奏')
+console.log(kanade)
