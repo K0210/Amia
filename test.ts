@@ -32,4 +32,5 @@ return z;
 }
 const a = new complex(1,2);
 const b = new complex(3,4);
-console.log(toString(add(a,b)));
+const c = toString(add(a,b));
+console.log(c)
