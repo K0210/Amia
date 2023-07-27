@@ -1,4 +1,4 @@
-type complex{
+type complex = {
     real: number
     imag: number
 }
