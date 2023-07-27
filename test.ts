@@ -1,4 +1,4 @@
-function name(x: string,y: string){
+function amia(x: string,y: string){
 return x + y
 }
 var kanade: string = name('宵崎','奏')
