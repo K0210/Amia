@@ -15,21 +15,21 @@ return z;
 function add(x: complex,y: complex){
 var real = x.real + y.real;
 var imag = x.imag + y.imag;
-const z = real.toString() + '+' + imag.toString() + 'i';
+const z = new complex(real,imag);
 return z;
 }
 function sub(x: complex,y: complex){
 var real = x.real - y.real;
 var imag = x.imag - y.imag;
-const z = real.toString() + '+' + imag.toString() + 'i';
+const z = new complex(real,imag);
 return z;
 }
 function mul(x: complex,y: complex){
 var real = x.real * y.real - x.imag * y.imag;
 var imag = x.real * y.imag + x.imag * y.real;
-const z = real.toString() + '+' + imag.toString() + 'i';
+const z = new complex(real,imag);
 return z;
 }
 const a = new complex(1,2);
 const b = new complex(3,4);
-console.log(add(a,b));
+console.log(toString(add(a,b)));
