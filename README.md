@@ -3,13 +3,14 @@
 あと、typescriptの拡張子の.tsがtestに似てますね。
 &nbsp;<br>
 # 関数の定義
-単項演算<br>
+<u>単項演算</u><br>
 &nbsp;<br>
 abs() 絶対値※Amia_testのみ<br>
 abs2() 絶対値の2乗※Amia_testのみ<br>
 con() 共役な複素数や双対数<br>
 toString() 文字列に変換<br>
-2項演算<br>
+&nbsp;<br>
+<u>2項演算</u><br>
 &nbsp;<br>
 add() 足し算<br>
 sub() 引き算<br>
