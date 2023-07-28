@@ -49,7 +49,6 @@ function mul(x: complex, y: complex){
 function div(x: complex, y: complex){
     const k = y.con();
     const amia = new complex(1/y.abs2(), 0);
-    const kanade = mul(k, amia)
-    const z = mul(x, kanade);
+    const z = mul(x, mul(k,amia));
     return z;
 }
