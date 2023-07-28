@@ -42,7 +42,6 @@ function mul(x: complex, y: complex){
     const z = new complex(real, imag);
     return z;
 }
-    const z = new complex(y.real, -y.imag);
 function div(x: complex, y: complex){
     const k = new complex(y.real, -y.imag);
     const amia = new complex(1/y.abs2(), 0);
