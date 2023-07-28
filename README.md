@@ -3,6 +3,12 @@
 あと、typescriptの拡張子の.tsがtestに似てますね。
 
 # 関数の定義
+単項演算<br>
+abs() 絶対値※Amia_testのみ
+abs2() 絶対値の2乗※Amia_testのみ
+con() 共役な複素数や双対数
+toString() 文字列に変換
+2項演算<br>
 add() 足し算<br>
 sub() 引き算<br>
 mul() 掛け算<br>
