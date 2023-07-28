@@ -11,6 +11,10 @@ imag: number
     abs2(){
       return  (this.real * this.real + this.imag * this.imag)
     }
+    con(){
+    const z = new complex(this.real, -this.imag);
+    return z;
+    }
     toString(){
         if(this.imag >= 0){
             const z = this.real.toString() + '+' + this.imag.toString() + 'i';
@@ -43,9 +47,8 @@ function mul(x: complex, y: complex){
     return z;
 }
 function div(x: complex, y: complex){
-    const k = new complex(y.real, -y.imag);
+    const k = y.con();
     const amia = new complex(1/y.abs2(), 0);
-    const kanade = mul(k, amia)
-    const z = mul(x, kanade);
+    const z = mul(x, mul(k,amia));
     return z;
 }
