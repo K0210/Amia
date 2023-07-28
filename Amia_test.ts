@@ -44,7 +44,7 @@ function mul(x: complex, y: complex){
 }
 function con(x: complex){
     const z = new complex(x.real, -x.imag);
-    return z
+    return z;
 }
 function div(x: complex, y: complex){
     const k = con(y);
