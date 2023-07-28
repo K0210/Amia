@@ -27,25 +27,26 @@ let y: any;
 function add(x: complex, y: complex){
     const real = x.real + y.real;
     const imag = x.imag + y.imag;
-    const z = new complex(real,imag);
+    const z = new complex(real, imag);
     return z;
 }
 function sub(x: complex, y: complex){
     const real = x.real - y.real;
     const imag = x.imag - y.imag;
-    const z = new complex(real,imag);
+    const z = new complex(real, imag);
     return z;
 }
 function mul(x: complex, y: complex){
     const real = x.real * y.real - x.imag * y.imag;
     const imag = x.real * y.imag + x.imag * y.real;
-    const z = new complex(real,imag);
+    const z = new complex(real, imag);
     return z;
 }
+    const z = new complex(y.real, -y.imag);
 function div(x: complex, y: complex){
-    const k = new complex(y.real,-y.imag);
-    const amia = new complex(1/y.abs2(),0);
-    const kanade = mul(k,amia)
-    const z = mul(x,kanade);
+    const k = new complex(y.real, -y.imag);
+    const amia = new complex(1/y.abs2(), 0);
+    const kanade = mul(k, amia)
+    const z = mul(x, kanade);
     return z;
 }
