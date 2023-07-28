@@ -11,6 +11,10 @@ imag: number
     abs2(){
       return  (this.real * this.real + this.imag * this.imag)
     }
+    con(){
+    const z = new complex(this.real, -this.imag);
+    return z;
+    }
     toString(){
         if(this.imag >= 0){
             const z = this.real.toString() + '+' + this.imag.toString() + 'i';
@@ -20,10 +24,6 @@ imag: number
             const z = this.real.toString() + this.imag.toString() + 'i';
             return z;
         }
-    }
-    con(){
-    const z = new complex(this.real, -this.imag);
-    return z;
     }
 }
 let x: any;
