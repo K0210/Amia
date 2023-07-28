@@ -4,6 +4,7 @@ declare class complex {
     constructor(real: number, imag: number);
     abs(): number;
     abs2(): number;
+    con(): complex;
     toString(): string;
 }
 declare let x: any;
