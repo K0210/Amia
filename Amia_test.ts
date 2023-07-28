@@ -42,8 +42,12 @@ function mul(x: complex, y: complex){
     const z = new complex(real, imag);
     return z;
 }
+function con(x: complex){
+    const z = new complex(x.real, -x.imag);
+    return z
+}
 function div(x: complex, y: complex){
-    const k = new complex(y.real, -y.imag);
+    const k = con(y);
     const amia = new complex(1/y.abs2(), 0);
     const kanade = mul(k, amia)
     const z = mul(x, kanade);
