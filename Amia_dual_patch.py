@@ -22,6 +22,6 @@ def exp(x):
   return exp
 def log(x, base = mh.e):
   real = mh.log(x.real, base)
-  imag = -x.imag * mh.log(x.real, base)
+  imag = -x.imag / x.real
   log = dual_number(real, imag)
   return log
