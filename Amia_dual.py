@@ -39,7 +39,7 @@ class dual_number(object):
   def __idiv__(self, other):
     k = other.con()
     amia = dual_number(other.real * other.real, 0)
-    self = self * mul(k,amia
+    self = self * mul(k,amia)
   def toString(self):
     if self.imag >= 0:
         z = str(self.real) + '+' + str(self.imag) + 'ε'
