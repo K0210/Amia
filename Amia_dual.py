@@ -34,23 +34,3 @@ class dual_number(object):
     else:
         z = str(self.real) + str(self.imag) + 'ε';
         return z;
-def add(x: dual_number, y: dual_number):
-    real = x.real + y.real
-    imag = x.imag + y.imag
-    z = dual_number(real, imag)
-    return z
-def sub(x: dual_number, y: dual_number):
-    real = x.real - y.real
-    imag = x.imag - y.imag
-    z = dual_number(real, imag)
-    return z
-def mul(x: dual_number, y: dual_number):
-    real = x.real * y.real
-    imag = x.real * y.imag + x.imag * y.real
-    z = dual_number(real, imag)
-    return z
-def div(x: dual_number, y: dual_number):
-    k = y.con()
-    amia = dual_number(y.real * y.real, 0)
-    z = mul(x, mul(k,amia))
-    return z
