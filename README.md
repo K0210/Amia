@@ -26,7 +26,7 @@
 &nbsp;<br>
 ### 2項演算
 全て func(x, y) の形です。<br>
-number型はこの計算に使用できませんので、<br>
+number型の変数はこの計算に使用できませんので、<br>
 complex型やdual_number型に変換してから使ってください。
 #### add(x, y)
 足し算 xとyを足します。
