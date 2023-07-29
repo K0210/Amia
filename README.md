@@ -25,7 +25,7 @@
 &nbsp;<br>
 ### 2項演算
 全て func(x, y) の形です。<br>
-number型とはこの計算ができないので、complex型やdual_number型に変換してから、使ってください。
+number型とはこの計算ができないので、complex型やdual_number型に変換してから使ってください。
 #### add(x, y)
 足し算 xとyを足します。
 #### sub(x, y)
