@@ -2,7 +2,7 @@
 私の好きなリズムゲームのキャラクターのゲーム内のSNSでの名前からこの名前をつけました。<br>
 <s>あと、typescriptの拡張子の.tsがtestに似てますね。</s>
 &nbsp;<br>
-## Amia_test
+## Amia_complex
 複素数の四則演算を計算するプログラムです。<br>
 &nbsp;<br>
 ## Amia_dual
@@ -14,9 +14,9 @@
 ### 単項演算
 全て this.func() の形です。
 #### abs()
-複素数の絶対値を返します。 (※Amia_testのみ)
+複素数の絶対値を返します。 (※Amia_complexのみ)
 #### abs2()
-複素数の絶対値の2乗を返します。 (※Amia_testのみ)
+複素数の絶対値の2乗を返します。 (※Amia_complexのみ)
 #### con()
 複素数や双対数(二重数)の共役な複素数や双対数を返します。
 #### toString()
