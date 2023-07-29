@@ -1,6 +1,6 @@
 # Amia
 私の好きなリズムゲームのキャラクターのゲーム内のSNSでの名前からこの名前をつけました。<br>
-あと、typescriptの拡張子の.tsがtestに似てますね。
+<s>あと、typescriptの拡張子の.tsがtestに似てますね。</s>
 &nbsp;<br>
 ## Amia_test
 複素数の四則演算を計算するプログラムです。<br>
