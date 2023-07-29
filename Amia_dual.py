@@ -1,4 +1,4 @@
-class dual_number(ob):
+class dual_number(object):
   real: float
   imag: float
   def __init__(self, real: float, imag: float):
@@ -23,15 +23,15 @@ class dual_number(ob):
     z = dual_number(real, imag)
     return z
   def __div__(self, other):
-    k = y.con()
+    k = other.con()
     amia = dual_number(other.real * other.real, 0)
-    z = x * mul(k,amia)
+    z = self * mul(k,amia)
     return z
   def toString(self):
     if self.imag >= 0:
         z = str(self.real) + '+' + str(self.imag) + 'ε'
         return z
-     else:
+    else:
         z = str(self.real) + str(self.imag) + 'ε';
         return z;
 def add(x: dual_number, y: dual_number):
