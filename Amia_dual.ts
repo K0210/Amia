@@ -11,11 +11,11 @@ imag: number
     }
     toString(){
         if(this.imag >= 0){
-            const z = this.real.toString() + '+' + this.imag.toString() + 'i';
+            const z = this.real.toString() + '+' + this.imag.toString() + 'ε';
             return z;
         }
         else{
-            const z = this.real.toString() + this.imag.toString() + 'i';
+            const z = this.real.toString() + this.imag.toString() + 'ε';
             return z;
         }
     }
