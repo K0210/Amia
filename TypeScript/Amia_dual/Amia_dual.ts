@@ -1,4 +1,4 @@
-class dual_number{
+export class dual_number{
 real: number
 imag: number
     constructor(real: number, imag: number){
@@ -22,25 +22,25 @@ imag: number
 }
 let x: any;
 let y: any;
-function add(x: dual_number, y: dual_number){
+export function add(x: dual_number, y: dual_number){
     const real = x.real + y.real;
     const imag = x.imag + y.imag;
     const z = new dual_number(real, imag);
     return z;
 }
-function sub(x: dual_number, y: dual_number){
+export function sub(x: dual_number, y: dual_number){
     const real = x.real - y.real;
     const imag = x.imag - y.imag;
     const z = new dual_number(real, imag);
     return z;
 }
-function mul(x: dual_number, y: dual_number){
+export function mul(x: dual_number, y: dual_number){
     const real = x.real * y.real;
     const imag = x.real * y.imag + x.imag * y.real;
     const z = new dual_number(real, imag);
     return z;
 }
-function div(x: dual_number, y: dual_number){
+export function div(x: dual_number, y: dual_number){
     const k = y.con();
     const amia = new dual_number(y.real * y.real, 0);
     const z = mul(x, mul(k,amia));
