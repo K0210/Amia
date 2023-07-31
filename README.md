@@ -12,8 +12,8 @@
 例えば、自動微分などに使われます。<br>
 TypeScript ver.とPython3 ver.があります。
 &nbsp;<br>
-### Amia_dual_patch.py
-Amia_dual.pyにはない三角関数などを定義してます。
+### Amia_dual_patch
+Amia_dualにはない三角関数などを定義してます。
 ## 関数の定義
 ### 単項演算
 全て this.func() の形です。
