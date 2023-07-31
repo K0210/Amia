@@ -1,4 +1,6 @@
-import "./Amia_dual"
+import {dual_number} from "./Amia_dual"
+let x: any;
+let y: any; 
 function cos(x: dual_number){
   const real = Math.cos(x.real);
   const imag = -x.imag * Math.sin(x.real);
