@@ -4,7 +4,7 @@ let y: any;
 function cos(x: dual_number){
   const real = Math.cos(x.real);
   const imag = -x.imag * Math.sin(x.real);
-  const z = new complex(real, imag);
+  const z = new dual_number(real, imag);
   return z;
 }
 function sin(x: dual_number){
