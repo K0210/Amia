@@ -1,4 +1,4 @@
-declare class dual_number {
+export declare class dual_number {
     real: number;
     imag: number;
     constructor(real: number, imag: number);
@@ -7,7 +7,7 @@ declare class dual_number {
 }
 declare let x: any;
 declare let y: any;
-declare function add(x: dual_number, y: dual_number): dual_number;
-declare function sub(x: dual_number, y: dual_number): dual_number;
-declare function mul(x: dual_number, y: dual_number): dual_number;
-declare function div(x: dual_number, y: dual_number): dual_number;
+export declare function add(x: dual_number, y: dual_number): dual_number;
+export declare function sub(x: dual_number, y: dual_number): dual_number;
+export declare function mul(x: dual_number, y: dual_number): dual_number;
+export declare function div(x: dual_number, y: dual_number): dual_number;
