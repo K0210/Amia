@@ -6,16 +6,16 @@ imag: number
     this.imag = imag;
     }
     con(){
-    const z = new dual_number(this.real, -this.imag);
+    const z: dual_number = new dual_number(this.real, -this.imag);
     return z;
     }
     toString(){
         if(this.imag >= 0){
-            const z = this.real.toString() + '+' + this.imag.toString() + 'ε';
+            const z: string = this.real.toString() + '+' + this.imag.toString() + 'ε';
             return z;
         }
         else{
-            const z = this.real.toString() + this.imag.toString() + 'ε';
+            const z: string = this.real.toString() + this.imag.toString() + 'ε';
             return z;
         }
     }
@@ -41,8 +41,8 @@ export function mul(x: dual_number, y: dual_number): dual_number{
     return z;
 }
 export function div(x: dual_number, y: dual_number): dual_number{
-    const k = y.con();
+    const k: dual_number = y.con();
     const amia = new dual_number(y.real * y.real, 0);
-    const z = mul(x, mul(k,amia));
+    const z:dual_number = mul(x, mul(k,amia));
     return z;
 }
