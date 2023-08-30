@@ -26,8 +26,6 @@ imag: number
         }
     }
 }
-let x: any;
-let y: any;
 export function add(x: complex, y: complex){
     const real = x.real + y.real;
     const imag = x.imag + y.imag;
