@@ -20,8 +20,6 @@ imag: number
         }
     }
 }
-let x: any;
-let y: any;
 export function add(x: dual_number, y: dual_number): dual_number{
     const real = x.real + y.real;
     const imag = x.imag + y.imag;
