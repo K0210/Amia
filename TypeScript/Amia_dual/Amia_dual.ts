@@ -40,7 +40,7 @@ export function mul(x: dual_number, y: dual_number): dual_number{
 }
 export function div(x: dual_number, y: dual_number): dual_number{
     const k: dual_number = y.con();
-    const amia = new dual_number(y.real * y.real, 0);
+    const amia = new dual_number(1 / y.real * y.real, 0);
     const z:dual_number = mul(x, mul(k,amia));
     return z;
 }
