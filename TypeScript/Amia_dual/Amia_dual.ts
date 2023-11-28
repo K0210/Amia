@@ -46,7 +46,7 @@ export function div(x: dual_number, y: dual_number): dual_number{
         if(x.real/y.real == 0){
             const imag = x.imag/y.real + x.real * (y.imag / y.real);
         }else{
-            const imag = x.imag/y.real + y.imag * (x.real / y.real)
+            const imag = x.imag/y.real + y.imag * (x.real / y.real);
         }
     }
     const z = new dual_number(real,imag) ;
