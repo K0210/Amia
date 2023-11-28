@@ -40,13 +40,13 @@ export function mul(x: dual_number, y: dual_number): dual_number{
 }
 export function div(x: dual_number, y: dual_number): dual_number{
     const real = x.real/y.real;
-    if(y.imag/y.real == 0 || x.real/y.real == 0){
-        const imag = x.imag/y.real + (x.real * y.imag)/y.real;
+    if(y.imag/(y.real**2) == 0 || x.real/(y.real^2) == 0){
+        const imag = -x.imag/y.real + (x.real * y.imag)/(y.real**2);
     }else if(x.real * y.imag == Infinity || x.real * y.imag == -Infinity){
-        if(x.real/y.real == 0){
-            const imag = x.imag/y.real + x.real * (y.imag / y.real);
+        if(x.real/(y.real**2) == 0){
+            const imag = -x.imag/y.real + x.real * (y.imag / (y.real**2));
         }else{
-            const imag = x.imag/y.real + y.imag * (x.real / y.real);
+            const imag = -x.imag/y.real + y.imag * (x.real / (y.real**2));
         }
     }
     const z = new dual_number(real,imag) ;
