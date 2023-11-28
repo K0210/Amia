@@ -43,7 +43,11 @@ export function div(x: dual_number, y: dual_number): dual_number{
     if(y.imag/y.real == 0){
         const imag = x.imag/y.real + (x.real * y.imag)/y.real;
     }else if(x.real * y.imag == Infinity || x.real * y.imag == -Infinity){
-        const imag = x.imag/y.real + x.real * (y.imag * y.real);
+        if(x.real/y.real == 0){
+            const imag = x.imag/y.real + x.real * (y.imag / y.real);
+        }else{
+            const imag = x.imag/y.real + y.imag * (x.real / y.real)
+        }
     }
     const z = new dual_number(real,imag) ;
     return z;
