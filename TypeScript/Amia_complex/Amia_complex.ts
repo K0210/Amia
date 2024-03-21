@@ -45,8 +45,8 @@ export function mul(x: complex, y: complex){
     return z;
 }
 export function div(x: complex, y: complex){
-    const k = y.con();
-    const amia = new complex(1/y.abs2(), 0);
-    const z = mul(x, mul(k,amia));
+    const real = (x.real * y.real + x.imag * y.imag)/ y.abs2();
+    const imag = (x.real * y.imag - x.imag * y.real) / y.abs2();
+    const z = new dual_number(real,imag);
     return z;
 }
