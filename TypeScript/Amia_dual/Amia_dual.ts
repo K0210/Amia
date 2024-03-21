@@ -39,8 +39,8 @@ export function mul(x: dual_number, y: dual_number): dual_number{
     return z;
 }
 export function div(x: dual_number, y: dual_number): dual_number{
-    const k: dual_number = y.con();
-    const amia = new dual_number(1 / y.real * y.real, 0);
-    const z:dual_number = mul(x, mul(k,amia));
+    const real = x.real / y.real;
+    const imag = (x.real * y.imag - x.imag * y.real) / y.real;
+    const z = new dual_number(real,imag);
     return z;
 }
