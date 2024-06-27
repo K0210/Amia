@@ -10,12 +10,12 @@ imag: number
     return z;
     }
     toString(){
-        if(this.imag >= 0){
-            const z: string = this.real.toString() + '+' + this.imag.toString() + 'ε';
+        if(this.imag < 0){
+            const z: string = this.real.toString() + this.imag.toString() + 'ε';
             return z;
         }
         else{
-            const z: string = this.real.toString() + this.imag.toString() + 'ε';
+            const z: string = this.real.toString() + '+' + this.imag.toString() + 'ε';
             return z;
         }
     }
